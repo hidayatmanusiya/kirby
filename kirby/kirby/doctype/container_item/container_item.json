@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-16 04:31:59.770941",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pallet",
+  "item_code",
+  "pallet_tare",
+  "total_weight",
+  "net_product_weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "pallet",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pallet",
+   "options": "Inventory Bin"
+  },
+  {
+   "fetch_from": "pallet.product",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "pallet.tare",
+   "fieldname": "pallet_tare",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pallet Tare"
+  },
+  {
+   "fetch_from": "pallet.gross",
+   "fieldname": "total_weight",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Weight"
+  },
+  {
+   "fetch_from": "pallet.net",
+   "fieldname": "net_product_weight",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Net Product Weight"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-16 10:35:21.796483",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Container Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-25 05:17:47.613958",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "api_id",
+  "api_secret_key",
+  "api_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_id",
+   "fieldtype": "Data",
+   "label": "API Id"
+  },
+  {
+   "fieldname": "api_secret_key",
+   "fieldtype": "Data",
+   "label": "API Secret Key"
+  },
+  {
+   "fieldname": "api_url",
+   "fieldtype": "Data",
+   "label": "API Url"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-08-25 05:17:47.613958",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Comodity API",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:isri_code",
+ "creation": "2022-08-19 14:18:11.278114",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "categoty",
+  "isri_code",
+  "item",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "categoty",
+   "fieldtype": "Data",
+   "label": "Categoty"
+  },
+  {
+   "fieldname": "isri_code",
+   "fieldtype": "Data",
+   "label": "ISRI Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-19 14:37:00.168089",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "ISRI",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-16 05:00:10.196327",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "image_type",
+  "image",
+  "view"
+ ],
+ "fields": [
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Image Type",
+   "options": "Container Image Type"
+  },
+  {
+   "fieldname": "view",
+   "fieldtype": "Image",
+   "in_preview": 1,
+   "label": "View",
+   "options": "image",
+   "width": "0"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-25 05:37:53.306762",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Container Image",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

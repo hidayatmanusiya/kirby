@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-03 13:07:43.362733",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "booking_number",
+  "shipper_section",
+  "shipper_name",
+  "person_name",
+  "column_break_6",
+  "phone",
+  "email",
+  "item_section",
+  "items",
+  "section_break_10",
+  "total_container_nos",
+  "column_break_12",
+  "total_gross_weight_in_mtons",
+  "column_break_14",
+  "total_nett_weight_in_m_tons",
+  "section_break_16",
+  "vessel_and_voyage_number",
+  "port_of_discharge",
+  "column_break_19",
+  "port_of_loading",
+  "final_destination",
+  "section_break_22",
+  "freight",
+  "column_break_24",
+  "invoice_value",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "booking_number",
+   "fieldtype": "Link",
+   "label": "Booking Number",
+   "options": "Booking Details"
+  },
+  {
+   "fieldname": "shipper_section",
+   "fieldtype": "Section Break",
+   "label": "Shipper"
+  },
+  {
+   "fetch_from": "booking_number.company",
+   "fieldname": "shipper_name",
+   "fieldtype": "Data",
+   "label": "Shipper Name"
+  },
+  {
+   "fetch_from": "booking_number.full_name",
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "label": "Person Name"
+  },
+  {
+   "fetch_from": "booking_number.phone",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fetch_from": "booking_number.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_section",
+   "fieldtype": "Section Break",
+   "label": "Bill of Lading Item"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Bill of Lading Item"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_container_nos",
+   "fieldtype": "Data",
+   "label": "Total Container Nos."
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_gross_weight_in_mtons",
+   "fieldtype": "Data",
+   "label": "Total Gross Weight in M.Tons"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_nett_weight_in_m_tons",
+   "fieldtype": "Data",
+   "label": "Total Nett Weight in M. Tons"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "booking_number.vessel",
+   "fieldname": "vessel_and_voyage_number",
+   "fieldtype": "Data",
+   "label": "Vessel & Voyage Number"
+  },
+  {
+   "fetch_from": "booking_number.port_of_loading",
+   "fieldname": "port_of_loading",
+   "fieldtype": "Link",
+   "label": "Port of Loading",
+   "options": "Port Details"
+  },
+  {
+   "fetch_from": "booking_number.port_of_discharge",
+   "fieldname": "port_of_discharge",
+   "fieldtype": "Link",
+   "label": "Port of Discharge",
+   "options": "Port Details"
+  },
+  {
+   "fetch_from": "booking_number.final_destination",
+   "fieldname": "final_destination",
+   "fieldtype": "Link",
+   "label": "Final Destination",
+   "options": "Port Details"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "freight",
+   "fieldtype": "Data",
+   "label": "Freight "
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_value",
+   "fieldtype": "Data",
+   "label": "Invoice Value"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bill of Lading",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-16 14:16:46.874534",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Bill of Lading",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

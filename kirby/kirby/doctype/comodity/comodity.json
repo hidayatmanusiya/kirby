@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:comodity",
+ "creation": "2022-08-12 16:05:16.881416",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "comodity",
+  "comodity_items_section",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "comodity",
+   "fieldtype": "Data",
+   "label": "Comodity",
+   "unique": 1
+  },
+  {
+   "fieldname": "comodity_items_section",
+   "fieldtype": "Section Break",
+   "label": "Comodity Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Comodity item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-24 00:50:09.131251",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Comodity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

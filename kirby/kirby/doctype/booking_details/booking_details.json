@@ -1,0 +1,454 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{BO}-{YYYY}-{booking}",
+ "creation": "2022-08-04 15:17:42.730181",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "person_name",
+  "full_name",
+  "phone",
+  "email",
+  "column_break_131",
+  "company",
+  "sales_contract",
+  "booking_agent_section",
+  "booking_agent",
+  "sales_rep",
+  "doc_rep",
+  "billing_rep",
+  "column_break_13",
+  "your_sales_rep_is",
+  "your_doc_rep_is",
+  "doc_rep_phone_no",
+  "doc_rep_email",
+  "your_billing_rep_is",
+  "billing_rep_email",
+  "booking_details_section",
+  "carrier",
+  "vessel",
+  "column_break_5",
+  "booking",
+  "booking_request",
+  "job_ref",
+  "port_details_section",
+  "port_oirigin",
+  "port_of_loading",
+  "port_of_discharge",
+  "final_destination",
+  "column_break_12",
+  "port_oirigin_date",
+  "port_loading_date",
+  "port_discharge_date",
+  "final_destination_date",
+  "port_dates_section",
+  "cut_off_date",
+  "etd",
+  "eta",
+  "column_break_31",
+  "aes_date",
+  "si_cut_off_date",
+  "earliest_receive",
+  "earliest_release",
+  "vgm_cutoff",
+  "cargo_description_section",
+  "comodity",
+  "column_break_42",
+  "hazardous",
+  "no_of_pkgs",
+  "container_detail_section",
+  "containers",
+  "empty_container_pick_up_location_section",
+  "location",
+  "pickup_phone",
+  "column_break_47",
+  "address",
+  "loaded_container_return_location_section",
+  "return_location",
+  "return_phone",
+  "column_break_51",
+  "return_address",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "booking_details_section",
+   "fieldtype": "Section Break",
+   "label": "Booking Details"
+  },
+  {
+   "fieldname": "carrier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Carrier",
+   "options": "Carrier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vessel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vessel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Booking",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_request",
+   "fieldtype": "Data",
+   "label": "Booking Request",
+   "reqd": 1
+  },
+  {
+   "fieldname": "job_ref",
+   "fieldtype": "Data",
+   "label": "Job Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "port_details_section",
+   "fieldtype": "Section Break",
+   "label": "Port Details"
+  },
+  {
+   "fieldname": "port_oirigin",
+   "fieldtype": "Link",
+   "label": "Port oirigin",
+   "options": "Port Details"
+  },
+  {
+   "fieldname": "port_of_loading",
+   "fieldtype": "Link",
+   "label": "Port of Loading",
+   "options": "Port Details"
+  },
+  {
+   "fieldname": "port_of_discharge",
+   "fieldtype": "Link",
+   "label": "Port of Discharge",
+   "options": "Port Details"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "port_oirigin_date",
+   "fieldtype": "Date",
+   "label": "Port Oirigin Date"
+  },
+  {
+   "fieldname": "port_loading_date",
+   "fieldtype": "Date",
+   "label": "Port Loading Date"
+  },
+  {
+   "fieldname": "port_discharge_date",
+   "fieldtype": "Date",
+   "label": "Port Discharge Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "person_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Person Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "person_name.cell_number",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone "
+  },
+  {
+   "fetch_from": "person_name.personal_email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "your_sales_rep_is",
+   "fieldtype": "Data",
+   "label": "Your Sales Rep is"
+  },
+  {
+   "fieldname": "your_doc_rep_is",
+   "fieldtype": "Data",
+   "label": "Your Doc Rep is"
+  },
+  {
+   "fieldname": "doc_rep_phone_no",
+   "fieldtype": "Data",
+   "label": "Doc Rep Phone No"
+  },
+  {
+   "fieldname": "doc_rep_email",
+   "fieldtype": "Data",
+   "label": "Doc Rep Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "your_billing_rep_is",
+   "fieldtype": "Data",
+   "label": "Your Billing Rep is"
+  },
+  {
+   "fieldname": "billing_rep_email",
+   "fieldtype": "Data",
+   "label": "Billing Rep Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "port_dates_section",
+   "fieldtype": "Section Break",
+   "label": "Port Dates"
+  },
+  {
+   "fieldname": "cut_off_date",
+   "fieldtype": "Datetime",
+   "label": "Cut off Date"
+  },
+  {
+   "fieldname": "etd",
+   "fieldtype": "Date",
+   "label": "ETD"
+  },
+  {
+   "fieldname": "eta",
+   "fieldtype": "Date",
+   "label": "ETA"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aes_date",
+   "fieldtype": "Datetime",
+   "label": "AES Date"
+  },
+  {
+   "fieldname": "si_cut_off_date",
+   "fieldtype": "Datetime",
+   "label": "SI Cut Off Date"
+  },
+  {
+   "fieldname": "earliest_receive",
+   "fieldtype": "Datetime",
+   "label": "Earliest Receive"
+  },
+  {
+   "fieldname": "earliest_release",
+   "fieldtype": "Datetime",
+   "label": "Earliest Release"
+  },
+  {
+   "fieldname": "vgm_cutoff",
+   "fieldtype": "Datetime",
+   "label": "VGM Cutoff"
+  },
+  {
+   "fieldname": "cargo_description_section",
+   "fieldtype": "Section Break",
+   "label": "Cargo Description"
+  },
+  {
+   "fieldname": "comodity",
+   "fieldtype": "Link",
+   "label": "Comodity",
+   "options": "Comodity"
+  },
+  {
+   "fieldname": "hazardous",
+   "fieldtype": "Select",
+   "label": "Hazardous",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "no_of_pkgs",
+   "fieldtype": "Float",
+   "label": "No of PKGS"
+  },
+  {
+   "fieldname": "containers",
+   "fieldtype": "Table",
+   "label": "Container(s)",
+   "options": "Booking Container Detail"
+  },
+  {
+   "fieldname": "empty_container_pick_up_location_section",
+   "fieldtype": "Section Break",
+   "label": "Empty container pick up location"
+  },
+  {
+   "fetch_from": "port_oirigin.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Pickup Location"
+  },
+  {
+   "fetch_from": "port_oirigin.port_address",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Pickup Address"
+  },
+  {
+   "fetch_from": "port_oirigin.phone",
+   "fieldname": "pickup_phone",
+   "fieldtype": "Data",
+   "label": "Pickup Phone "
+  },
+  {
+   "fieldname": "loaded_container_return_location_section",
+   "fieldtype": "Section Break",
+   "label": "Loaded Container Return Location"
+  },
+  {
+   "fetch_from": "port_of_loading.location",
+   "fieldname": "return_location",
+   "fieldtype": "Data",
+   "label": "Return Location"
+  },
+  {
+   "fetch_from": "port_of_loading.port_address",
+   "fieldname": "return_address",
+   "fieldtype": "Small Text",
+   "label": "Return Address"
+  },
+  {
+   "fetch_from": "port_of_loading.phone",
+   "fieldname": "return_phone",
+   "fieldtype": "Data",
+   "label": "Return Phone"
+  },
+  {
+   "fieldname": "final_destination",
+   "fieldtype": "Link",
+   "label": "Final Destination",
+   "options": "Port Details"
+  },
+  {
+   "fieldname": "final_destination_date",
+   "fieldtype": "Date",
+   "label": "Final Destination Date"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "container_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Container Detail"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "booking_agent",
+   "fieldtype": "Link",
+   "label": "Booking Agent",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Booking Details",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_contract",
+   "fieldtype": "Link",
+   "label": "Sales Contract",
+   "options": "Sales Contract"
+  },
+  {
+   "fetch_from": "person_name.employee_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "booking_agent_section",
+   "fieldtype": "Section Break",
+   "label": "Booking Agent"
+  },
+  {
+   "fieldname": "column_break_131",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_rep",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sales Rep"
+  },
+  {
+   "fieldname": "doc_rep",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Doc Rep"
+  },
+  {
+   "fieldname": "billing_rep",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Billing Rep"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-16 14:04:34.348898",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Booking Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

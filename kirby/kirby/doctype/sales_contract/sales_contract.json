@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SAL-CON.-.YYYY.-.####",
+ "creation": "2022-08-06 15:38:38.590494",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "seller_section",
+  "customer",
+  "column_break_3",
+  "supplier",
+  "date",
+  "primary_address_and_contact_detail_section",
+  "customer_primary_contact",
+  "mobile_no",
+  "email_id",
+  "primary_address",
+  "column_break_9",
+  "supplier_primary_contact",
+  "supplier_mobile_no",
+  "supplier_email_id",
+  "supplier_primary_address",
+  "section_break_15",
+  "items",
+  "section_break_17",
+  "validity",
+  "column_break_19",
+  "insurance",
+  "terms_and_conditions_section",
+  "terms",
+  "terms_and_conditions_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "seller_section",
+   "fieldtype": "Section Break",
+   "label": "Seller & Buyer Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "primary_address_and_contact_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Primary Address and Contact Detail"
+  },
+  {
+   "fetch_from": "customer.customer_primary_contact",
+   "fieldname": "customer_primary_contact",
+   "fieldtype": "Link",
+   "label": "Customer Primary Contact",
+   "options": "Contact"
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fetch_from": "customer.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.primary_address",
+   "fieldname": "primary_address",
+   "fieldtype": "Data",
+   "label": "Primary Address"
+  },
+  {
+   "fieldname": "supplier_primary_contact",
+   "fieldtype": "Link",
+   "label": "Supplier Primary Contact",
+   "options": "Address"
+  },
+  {
+   "fieldname": "supplier_mobile_no",
+   "fieldtype": "Data",
+   "label": "Supplier Mobile No"
+  },
+  {
+   "fieldname": "supplier_email_id",
+   "fieldtype": "Data",
+   "label": "Supplier Email Id"
+  },
+  {
+   "fieldname": "supplier_primary_address",
+   "fieldtype": "Data",
+   "label": "Supplier Primary Address"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Contract Items"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "10",
+   "fieldname": "validity",
+   "fieldtype": "Data",
+   "label": "Validity"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Insurance charges will be paid by seller. Insurance will cover up to destination port or ICD. ",
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "label": "Insurance"
+  },
+  {
+   "fieldname": "terms_and_conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Terms and Conditions",
+   "options": "fa fa-legal"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Link",
+   "label": "Terms",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fetch_from": "terms.terms",
+   "fieldname": "terms_and_conditions_details",
+   "fieldtype": "Text Editor",
+   "label": "Terms and Conditions Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales Contract",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-16 12:19:49.284688",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Sales Contract",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

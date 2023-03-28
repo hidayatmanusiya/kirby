@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-05 05:55:14.327981",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "container_number",
+  "gross_in_pounds",
+  "tare",
+  "net_in_pounds",
+  "nett_in_kilos",
+  "gross_in_metric_tons",
+  "net_in_metric_tons",
+  "no_of_bales",
+  "container_seal_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "container_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Container Number"
+  },
+  {
+   "fieldname": "gross_in_pounds",
+   "fieldtype": "Data",
+   "label": "Gross in Pounds"
+  },
+  {
+   "fieldname": "tare",
+   "fieldtype": "Data",
+   "label": "Tare"
+  },
+  {
+   "fieldname": "net_in_pounds",
+   "fieldtype": "Data",
+   "label": "Net in Pounds"
+  },
+  {
+   "fieldname": "nett_in_kilos",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nett in Kilos"
+  },
+  {
+   "fieldname": "gross_in_metric_tons",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Gross in Metric Tons"
+  },
+  {
+   "fieldname": "no_of_bales",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "No. of Bales"
+  },
+  {
+   "fieldname": "container_seal_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Container Seal Number"
+  },
+  {
+   "fieldname": "net_in_metric_tons",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Net in Metric Tons"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-16 13:51:45.419584",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Bill of Lading Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

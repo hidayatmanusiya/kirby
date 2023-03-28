@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include kirby *.css
+recursive-include kirby *.csv
+recursive-include kirby *.html
+recursive-include kirby *.ico
+recursive-include kirby *.js
+recursive-include kirby *.json
+recursive-include kirby *.md
+recursive-include kirby *.png
+recursive-include kirby *.py
+recursive-include kirby *.svg
+recursive-include kirby *.txt
+recursive-exclude kirby *.pyc

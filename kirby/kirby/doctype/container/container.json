@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{CON}-{DD}-{MM}-{YY}-{container_number}",
+ "creation": "2022-08-16 03:23:50.569901",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "container_details_section",
+  "booking_number",
+  "gate_out_empty",
+  "get_in",
+  "column_break_5",
+  "container_number",
+  "seal_number",
+  "container_size",
+  "container_tare_weight",
+  "section_break_5",
+  "items",
+  "section_break_8",
+  "total_pallet_tare",
+  "column_break_10",
+  "total_weight",
+  "total_net_weight",
+  "container_image_section",
+  "images",
+  "container_location_section",
+  "location",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "container_details_section",
+   "fieldtype": "Section Break",
+   "label": "Container Details"
+  },
+  {
+   "fieldname": "container_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Container Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seal_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Seal Number"
+  },
+  {
+   "fieldname": "booking_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Booking Number",
+   "options": "Booking Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Container Item"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Container Item"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_pallet_tare",
+   "fieldtype": "Int",
+   "label": "Total Pallet Tare"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Int",
+   "label": "Total Weight"
+  },
+  {
+   "fieldname": "container_image_section",
+   "fieldtype": "Section Break",
+   "label": "Container Image"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "images",
+   "fieldtype": "Table",
+   "label": "Images",
+   "options": "Container Image"
+  },
+  {
+   "fieldname": "total_net_weight",
+   "fieldtype": "Int",
+   "label": "Total Net Weight"
+  },
+  {
+   "fieldname": "gate_out_empty",
+   "fieldtype": "Datetime",
+   "label": "Gate Out Empty"
+  },
+  {
+   "fieldname": "get_in",
+   "fieldtype": "Datetime",
+   "label": "Get In"
+  },
+  {
+   "fieldname": "container_tare_weight",
+   "fieldtype": "Data",
+   "label": "Container Tare weight"
+  },
+  {
+   "fieldname": "container_size",
+   "fieldtype": "Data",
+   "label": "Container Size"
+  },
+  {
+   "fieldname": "container_location_section",
+   "fieldtype": "Section Break",
+   "label": "container Location"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "location",
+   "fieldtype": "Table",
+   "label": "Location",
+   "options": "Container Location"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Container",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-16 10:34:49.669106",
+ "modified_by": "Administrator",
+ "module": "Kirby",
+ "name": "Container",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
